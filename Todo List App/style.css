@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box  ;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px 30px 70px;
+    margin: 100px auto 20px;
+    
+}
+
+.todo-app h2{
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #002765;
+}
+
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+/* Search CSS */
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeefe;
+    border-radius: 30px;
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.search button{
+    border: none;
+    outline: none;
+    background: #ff5945;
+    color: #fff;
+    padding: 16px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.search button:hover{
+    background: green;
+}
+
+
+/* List Styling */
+
+ul li{
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    font-size: 17px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(/images/unchecked.png);
+    background-position: center;
+    background-size: cover;
+}
+
+ul li.checked {
+    /* background: #f0f0f0; */
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(/images/checked.png);
+}
+
+/* Cross Icon CSS */
+
+span{
+    color: red;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+span:hover{
+    transform: scale(2.1);
+}
