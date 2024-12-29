@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background: #bbc6fa;
+}
+
+.quote {
+    background: #fff;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+.quote h2 {
+    font-size: 29px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.quote h2::after {
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.quote blockquote {
+    font-size: 28px;
+    min-height: 110px;
+}
+
+blockquote::before,
+blockquote::after {
+    content: '"';
+}
+
+.quote span {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.quote span::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -30%;
+    width: 20px;
+    height: 2px;
+    background: rgb(23, 124, 229);
+}
+
+
+.quote div {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote button {
+    background: rgb(23, 124, 229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgb(23, 124, 229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.quote button:hover {
+    background: rgb(191, 191, 191);
+    color: #000;
+    border: 1px solid rgb(191, 191, 191);
+    transition: background 0.3s, color 0.3s;
+}
+
+.quote button:nth-child(2) {
+    background: transparent;
+    color: black;
+}
+
+img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* .twitter-share-button {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: black;
+} */
