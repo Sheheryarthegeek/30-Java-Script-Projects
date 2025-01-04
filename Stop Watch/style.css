@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+
+body {
+    background: #edeaff;
+}
+
+
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 2rem;
+    border: 1px solid black;
+    /* max-width: 600px; */
+
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.buttons i {
+    cursor: pointer;
+}
+
+#play-btn {
+    font-size: 60px;
+}
